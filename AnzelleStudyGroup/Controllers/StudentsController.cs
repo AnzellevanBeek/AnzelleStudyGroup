@@ -19,6 +19,7 @@ namespace AnzelleStudyGroup.Controllers
             students.Add(new Models.StudentModel { StudentNumber = "u23585073", Name = "Lwandiso", Surname = "Thanda", EmailAddress = "u23585073@tuks.co.za", myLink = Url.Content("~/HTML/LwandisoThanda.html") });
             students.Add(new Models.StudentModel { StudentNumber = "u22750802", Name = "Ntsika", Surname = "Mgijima", EmailAddress = "u22750802@tuks.co.za", myLink = Url.Content("~/HTML/NtsikaMgijima.html") });
 
+            ViewBag.ActivePage = "Main";
             return View(students);
         }
     }

@@ -18,3 +18,60 @@ select,
 textarea {
     max-width: 280px;
 }
+
+nav a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+ 
+nav a:hover {
+    background-color: grey;
+}
+
+
+nav a.active {
+    background-color: green !important;
+}
+
+.menu-item {
+    border-right: 1px solid white;
+}
+
+.menu-item:last-child {
+    border-right: none;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.menu-item {
+    margin-right: 10px; 
+    border-right: 1px solid white; 
+    padding: 10px 15px; 
+}
+
+    .menu-item:last-child {
+        border-right: none;
+    }
+
+@media (max-width: 600px) {
+    .menu-item {
+        margin-right: 0; 
+    }
+}
+
+#menu li a {
+    background-color: #e8eef4;
+    padding: 10px 20px;
+    text-decoration: none;
+    line-height: 2.8em;
+    border-radius: 4px 4px 0 0;
+}
+
+    #menu li a:hover {
+       background-color: #ffffff;
+    }

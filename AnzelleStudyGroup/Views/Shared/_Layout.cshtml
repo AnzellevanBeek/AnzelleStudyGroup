@@ -4,12 +4,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link rel="stylesheet" href="~/Content/site.css"/>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+    <div class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+        <a href="@Url.Action("Index", "Home")" class="@(ViewBag.ActivePage == "Main" ? "active" : "")">MAIN</a>
+        <a href="@Url.Action("List", "People")" class="@(ViewBag.ActivePage == "List" ? "active" : "")">LIST</a>
+        <a href="@Url.Action("Anzelle", "People")" class="@(ViewBag.ActivePage == "Anzelle" ? "active" : "")">Anzelle</a>
+        <a href="@Url.Action("Ntsika", "People")" class="@(ViewBag.ActivePage == "Ntsika" ? "active" : "")">Ntsika</a>
         <div class="container">
             @Html.ActionLink("AnzelleStudyGroup", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
@@ -21,11 +26,11 @@
                     <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Student", "ListStudent", "Students", new { area = ""}, new { @class = "nav-link"})</li>
+                    <li>@Html.ActionLink("Student", "ListStudent", "Students", new { area = "" }, new { @class = "nav-link" })</li>
                 </ul>
             </div>
         </div>
-    </nav>
+    </div>
     <div class="container body-content">
         @RenderBody()
         <hr />
@@ -37,5 +42,6 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    <script src="~/Scripts/site.js"></script>
 </body>
 </html>

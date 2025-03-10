@@ -20,7 +20,7 @@ namespace AnzelleStudyGroup.Models
         [Display(Name = "EMAIL ADDRESS")]
         public string EmailAddress { get; set; }
 
-        [Display(Name = "myLink")]
+        [Display(Name = "Link to personal page")]
         public string myLink { get; set; }
     }
 }
