@@ -4,68 +4,46 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lwandiso's Profile</title>
-    <style>
-        nav {
-            background-color: #333;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-                color: white;
-                text-decoration: none;
-                padding: 10px;
-                margin: 5px;
-                display: inline-block;
-        }
-
-        nav a:hover {
-                    background-color: #555;
-        }
-
-        nav a.active {
-                    background-color: green !important;
-        }
-
-        .menu-item {
-            border-right: 1px solid white;
-        }
-
-        .menu-item:last-child {
-                border-right: none;
-        }
-
-    </style>
+    <link href="../Content/Site.css" rel="stylesheet" />
 </head>
 <body>
-
-    <nav>
-        <a href="ListStudent.cshtml">MAIN</a>
-        <a href="StudentModels.cs">LIST</a>
-        <a href="AnzelleVanBeek.html">Anzelle</a>
-        <a href="CynthiaMashaba.html">Cynthia</a>
-        <a href="LwandisoThanda.html">Lwandiso</a>
-        <a href="NtsikaMgijima.html">Ntsika</a>
-        <a href="RiyaNaidoo.html">Riya</a>
-        <a href="javascript:history.back()">BACK</a>
-    </nav>
     <header>
         <h1>Lwandiso Thanda</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ListStudent.html">List of People</a></li>
+                <li><a href="#">Back</a></li>
+                <li><a href="AnzelleVanBeek.html">Anzelle</a></li>
+                <li><a href="RiyaNaidoo.html">Riya</a></li>
+                <li><a href="LwandisoThanda.html">Lwandiso</a></li>
+                <li><a href="NtsikaMgijima.html">Ntsika</a></li>
+                <li><a href="CynthiaMashaba.html">Cynthia</a></li>
+            </ul>
+        </nav>
     </header>
-    <section>
-        <h2>Background</h2>
-        <p>Lwandiso is...</p>
+
+    <section id="background">
+        <img src="../HTML/Images/Don-cheadle-as-rhodey-Cropped.webp" alt="Images" />
+        <p>Background information about Lwandiso.</p>
     </section>
-    <section>
-        <h2>Hobbies</h2>
-        <p>Lwandiso enjoys...</p>
+
+    <section id="hobbies">
+        <img src="../HTML/Images/hawkeye.webp" alt="Images" />
+        <p>Details about Lwandiso's hobbies.</p>
     </section>
-    <section>
-        <h3>Modules</h3>
-        <p>INF272</p>
-    </section>
-    <section>
-        <h2>Profile picture</h2>
+
+    <section id="modules">
+        <table>
+            <tr>
+                <th>First Semester</th>
+                <th>Second Semester</th>
+            </tr>
+            <tr>
+                <td>Module 1</td>
+                <td>Module 2</td>
+            </tr>
+        </table>
     </section>
 </body>
 </html>
