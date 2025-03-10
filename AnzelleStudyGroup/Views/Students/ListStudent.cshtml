@@ -23,6 +23,9 @@
         <th>
             @Html.DisplayNameFor(model => model.EmailAddress)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.myLink)
+        </th>
         <th></th>
     </tr>
 
@@ -40,6 +43,12 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.EmailAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.myLink)
+            </td>
+            <td>
+                <a href="@item.myLink" target="_blank" class="btn btn-primary">LINK</a>
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
