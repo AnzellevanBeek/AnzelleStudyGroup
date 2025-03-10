@@ -121,9 +121,11 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\StudentsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\StudentModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -146,12 +148,27 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="HTML\AnzelleVanBeek.html" />
+    <Content Include="HTML\CynthiaMashaba.html" />
+    <Content Include="HTML\LwandisoThanda.html" />
+    <Content Include="HTML\NtsikaMgijima.html" />
+    <Content Include="HTML\RiyaNaidoo.html" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="HTML\Images\thor-lightning.webp" />
+    <Content Include="HTML\Images\The-Incredible-Hulk.webp" />
+    <Content Include="HTML\Images\black-widow-1.webp" />
+    <Content Include="HTML\Images\Wanda-Scarlet-Witch-Cropped.webp" />
+    <Content Include="HTML\Images\antman-and-the-wasp-marvel-4.webp" />
+    <Content Include="HTML\Images\Vision-Civil-War-Cropped.webp" />
+    <Content Include="HTML\Images\tony-stark-iron-man.webp" />
+    <Content Include="HTML\Images\hawkeye.webp" />
+    <Content Include="HTML\Images\Don-cheadle-as-rhodey-Cropped.webp" />
+    <Content Include="HTML\Images\Anthony-Mackie-Captain-America-4.webp" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -177,10 +194,10 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Students\ListStudent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
